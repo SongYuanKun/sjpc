@@ -1,0 +1,429 @@
+1    DEBUG [2016-05-11 10:02:21]  Request:
+1    DEBUG [2016-05-11 10:02:21]  GET:https://api.weibo.com/2/statuses/user_timeline/ids.json
+41   DEBUG [2016-05-11 10:02:21]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+41   DEBUG [2016-05-11 10:02:21]  API-RemoteIP: 192.168.1.120
+1625 DEBUG [2016-05-11 10:02:23]  Response:
+1625 DEBUG [2016-05-11 10:02:23]  https StatusCode:200
+1625 DEBUG [2016-05-11 10:02:23]  Server:nginx/1.6.1
+1625 DEBUG [2016-05-11 10:02:23]  Date:Wed, 11 May 2016 02:02:18 GMT
+1625 DEBUG [2016-05-11 10:02:23]  Content-Type:application/json;charset=UTF-8
+1625 DEBUG [2016-05-11 10:02:23]  Transfer-Encoding:chunked
+1625 DEBUG [2016-05-11 10:02:23]  Connection:keep-alive
+1625 DEBUG [2016-05-11 10:02:23]  Api-Server-IP:10.75.5.67
+1627 DEBUG [2016-05-11 10:02:23]  Vary:Accept-Encoding
+1627 DEBUG [2016-05-11 10:02:23]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+1627 DEBUG [2016-05-11 10:02:23]  SINA-TS:NGE2ZWMzNjggMCAxIDEgNSA1Cg==
+1629 WARN  [2016-05-11 10:02:23]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+1629 DEBUG [2016-05-11 10:02:23]  {"error":"request uid's value must be the current user","error_code":21335,"request":"/2/statuses/user_timeline/ids.json"}
+
+0    DEBUG [2016-05-15 10:42:36]  Request:
+0    DEBUG [2016-05-15 10:42:36]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+41   DEBUG [2016-05-15 10:42:36]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+41   DEBUG [2016-05-15 10:42:36]  API-RemoteIP: 192.168.1.120
+1153 DEBUG [2016-05-15 10:42:37]  Response:
+1153 DEBUG [2016-05-15 10:42:37]  https StatusCode:200
+1153 DEBUG [2016-05-15 10:42:37]  Server:nginx/1.6.1
+1153 DEBUG [2016-05-15 10:42:37]  Date:Sun, 15 May 2016 02:42:30 GMT
+1153 DEBUG [2016-05-15 10:42:37]  Content-Type:application/json ;charset=utf-8
+1153 DEBUG [2016-05-15 10:42:37]  Content-Length:104
+1153 DEBUG [2016-05-15 10:42:37]  Connection:keep-alive
+1154 DEBUG [2016-05-15 10:42:37]  X-Powered-By:PHP/5.4.5
+1154 DEBUG [2016-05-15 10:42:37]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+1154 DEBUG [2016-05-15 10:42:37]  SINA-TS:OTQwOWMzNjggMCAxIDEgNiAxMTcK
+1158 DEBUG [2016-05-15 10:42:37]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 10:46:15]  Request:
+1    DEBUG [2016-05-15 10:46:15]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+68   DEBUG [2016-05-15 10:46:15]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+68   DEBUG [2016-05-15 10:46:15]  API-RemoteIP: 192.168.1.120
+4318 DEBUG [2016-05-15 10:46:19]  Response:
+4318 DEBUG [2016-05-15 10:46:19]  https StatusCode:200
+4318 DEBUG [2016-05-15 10:46:19]  Server:nginx/1.6.1
+4319 DEBUG [2016-05-15 10:46:19]  Date:Sun, 15 May 2016 02:46:12 GMT
+4319 DEBUG [2016-05-15 10:46:19]  Content-Type:application/json ;charset=utf-8
+4319 DEBUG [2016-05-15 10:46:19]  Content-Length:104
+4319 DEBUG [2016-05-15 10:46:19]  Connection:keep-alive
+4319 DEBUG [2016-05-15 10:46:19]  X-Powered-By:PHP/5.4.5
+4319 DEBUG [2016-05-15 10:46:19]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+4319 DEBUG [2016-05-15 10:46:19]  SINA-TS:OTUwOWMzNjggMCAxIDEgNiAxMQo=
+4324 DEBUG [2016-05-15 10:46:19]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 10:46:57]  Request:
+1    DEBUG [2016-05-15 10:46:57]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+48   DEBUG [2016-05-15 10:46:57]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+48   DEBUG [2016-05-15 10:46:57]  API-RemoteIP: 192.168.1.120
+648  DEBUG [2016-05-15 10:46:58]  Response:
+648  DEBUG [2016-05-15 10:46:58]  https StatusCode:200
+648  DEBUG [2016-05-15 10:46:58]  Server:nginx/1.6.1
+648  DEBUG [2016-05-15 10:46:58]  Date:Sun, 15 May 2016 02:46:51 GMT
+648  DEBUG [2016-05-15 10:46:58]  Content-Type:application/json ;charset=utf-8
+648  DEBUG [2016-05-15 10:46:58]  Content-Length:104
+649  DEBUG [2016-05-15 10:46:58]  Connection:keep-alive
+649  DEBUG [2016-05-15 10:46:58]  X-Powered-By:PHP/5.4.5
+649  DEBUG [2016-05-15 10:46:58]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+649  DEBUG [2016-05-15 10:46:58]  SINA-TS:NGI2ZWMzNjggMCAxIDEgNiA5Cg==
+654  DEBUG [2016-05-15 10:46:58]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 10:51:36]  Request:
+1    DEBUG [2016-05-15 10:51:36]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+40   DEBUG [2016-05-15 10:51:36]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+40   DEBUG [2016-05-15 10:51:36]  API-RemoteIP: 192.168.1.120
+689  DEBUG [2016-05-15 10:51:37]  Response:
+689  DEBUG [2016-05-15 10:51:37]  https StatusCode:200
+690  DEBUG [2016-05-15 10:51:37]  Server:nginx/1.6.1
+690  DEBUG [2016-05-15 10:51:37]  Date:Sun, 15 May 2016 02:51:30 GMT
+690  DEBUG [2016-05-15 10:51:37]  Content-Type:application/json ;charset=utf-8
+690  DEBUG [2016-05-15 10:51:37]  Content-Length:100
+690  DEBUG [2016-05-15 10:51:37]  Connection:keep-alive
+690  DEBUG [2016-05-15 10:51:37]  X-Powered-By:PHP/5.4.5
+690  DEBUG [2016-05-15 10:51:37]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+690  DEBUG [2016-05-15 10:51:37]  SINA-TS:NGE2ZWMzNjggMCA5IDkgNiAxMwo=
+694  DEBUG [2016-05-15 10:51:37]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+698  INFO  [2016-05-15 10:51:37]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 10:52:07]  Request:
+1    DEBUG [2016-05-15 10:52:07]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+43   DEBUG [2016-05-15 10:52:07]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+43   DEBUG [2016-05-15 10:52:07]  API-RemoteIP: 192.168.1.120
+960  DEBUG [2016-05-15 10:52:08]  Response:
+960  DEBUG [2016-05-15 10:52:08]  https StatusCode:200
+961  DEBUG [2016-05-15 10:52:08]  Server:nginx/1.6.1
+961  DEBUG [2016-05-15 10:52:08]  Date:Sun, 15 May 2016 02:52:01 GMT
+961  DEBUG [2016-05-15 10:52:08]  Content-Type:application/json ;charset=utf-8
+961  DEBUG [2016-05-15 10:52:08]  Content-Length:100
+961  DEBUG [2016-05-15 10:52:08]  Connection:keep-alive
+961  DEBUG [2016-05-15 10:52:08]  X-Powered-By:PHP/5.4.5
+961  DEBUG [2016-05-15 10:52:08]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+961  DEBUG [2016-05-15 10:52:08]  SINA-TS:OTUwOWMzNjggMCAxIDEgNiAxMQo=
+967  DEBUG [2016-05-15 10:52:08]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+972  INFO  [2016-05-15 10:52:08]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+1    DEBUG [2016-05-15 10:53:03]  Request:
+1    DEBUG [2016-05-15 10:53:03]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+58   DEBUG [2016-05-15 10:53:03]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+58   DEBUG [2016-05-15 10:53:03]  API-RemoteIP: 192.168.1.120
+795  DEBUG [2016-05-15 10:53:04]  Response:
+795  DEBUG [2016-05-15 10:53:04]  https StatusCode:200
+795  DEBUG [2016-05-15 10:53:04]  Server:nginx/1.6.1
+795  DEBUG [2016-05-15 10:53:04]  Date:Sun, 15 May 2016 02:52:57 GMT
+795  DEBUG [2016-05-15 10:53:04]  Content-Type:application/json ;charset=utf-8
+795  DEBUG [2016-05-15 10:53:04]  Content-Length:100
+795  DEBUG [2016-05-15 10:53:04]  Connection:keep-alive
+795  DEBUG [2016-05-15 10:53:04]  X-Powered-By:PHP/5.3.16
+796  DEBUG [2016-05-15 10:53:04]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+796  DEBUG [2016-05-15 10:53:04]  SINA-TS:NGI2ZWMzNjggMCAxIDEgNSA4MAo=
+800  DEBUG [2016-05-15 10:53:04]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+804  INFO  [2016-05-15 10:53:04]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 10:53:33]  Request:
+1    DEBUG [2016-05-15 10:53:33]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+45   DEBUG [2016-05-15 10:53:33]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+45   DEBUG [2016-05-15 10:53:33]  API-RemoteIP: 192.168.1.120
+600  DEBUG [2016-05-15 10:53:34]  Response:
+601  DEBUG [2016-05-15 10:53:34]  https StatusCode:200
+601  DEBUG [2016-05-15 10:53:34]  Server:nginx/1.6.1
+601  DEBUG [2016-05-15 10:53:34]  Date:Sun, 15 May 2016 02:53:27 GMT
+601  DEBUG [2016-05-15 10:53:34]  Content-Type:application/json ;charset=utf-8
+601  DEBUG [2016-05-15 10:53:34]  Content-Length:100
+601  DEBUG [2016-05-15 10:53:34]  Connection:keep-alive
+601  DEBUG [2016-05-15 10:53:34]  X-Powered-By:PHP/5.4.5
+601  DEBUG [2016-05-15 10:53:34]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+601  DEBUG [2016-05-15 10:53:34]  SINA-TS:OTcwOWMzNjggMCAxIDEgNCAxMQo=
+606  DEBUG [2016-05-15 10:53:34]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+610  INFO  [2016-05-15 10:53:34]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 10:53:42]  Request:
+1    DEBUG [2016-05-15 10:53:42]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+40   DEBUG [2016-05-15 10:53:42]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+40   DEBUG [2016-05-15 10:53:42]  API-RemoteIP: 192.168.1.120
+674  DEBUG [2016-05-15 10:53:42]  Response:
+674  DEBUG [2016-05-15 10:53:42]  https StatusCode:200
+674  DEBUG [2016-05-15 10:53:42]  Server:nginx/1.6.1
+675  DEBUG [2016-05-15 10:53:42]  Date:Sun, 15 May 2016 02:53:36 GMT
+675  DEBUG [2016-05-15 10:53:42]  Content-Type:application/json ;charset=utf-8
+675  DEBUG [2016-05-15 10:53:42]  Content-Length:100
+675  DEBUG [2016-05-15 10:53:42]  Connection:keep-alive
+675  DEBUG [2016-05-15 10:53:42]  X-Powered-By:PHP/5.4.5
+675  DEBUG [2016-05-15 10:53:42]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+675  DEBUG [2016-05-15 10:53:42]  SINA-TS:OTUwOWMzNjggMCAxIDEgNiAxMAo=
+680  DEBUG [2016-05-15 10:53:42]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+684  INFO  [2016-05-15 10:53:42]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 11:31:58]  Request:
+1    DEBUG [2016-05-15 11:31:58]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+64   DEBUG [2016-05-15 11:31:58]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+65   DEBUG [2016-05-15 11:31:58]  API-RemoteIP: 192.168.1.120
+1083 DEBUG [2016-05-15 11:31:59]  Response:
+1083 DEBUG [2016-05-15 11:31:59]  https StatusCode:200
+1083 DEBUG [2016-05-15 11:31:59]  Server:nginx/1.6.1
+1083 DEBUG [2016-05-15 11:31:59]  Date:Sun, 15 May 2016 03:31:52 GMT
+1083 DEBUG [2016-05-15 11:31:59]  Content-Type:application/json ;charset=utf-8
+1083 DEBUG [2016-05-15 11:31:59]  Content-Length:100
+1083 DEBUG [2016-05-15 11:31:59]  Connection:keep-alive
+1083 DEBUG [2016-05-15 11:31:59]  X-Powered-By:PHP/5.4.5
+1083 DEBUG [2016-05-15 11:31:59]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+1084 DEBUG [2016-05-15 11:31:59]  SINA-TS:NGI2ZWMzNjggMCAyIDIgNiAxMjIK
+1087 DEBUG [2016-05-15 11:31:59]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+1093 INFO  [2016-05-15 11:31:59]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 11:35:56]  Request:
+1    DEBUG [2016-05-15 11:35:56]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+48   DEBUG [2016-05-15 11:35:56]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+49   DEBUG [2016-05-15 11:35:56]  API-RemoteIP: 192.168.1.120
+723  DEBUG [2016-05-15 11:35:56]  Response:
+723  DEBUG [2016-05-15 11:35:56]  https StatusCode:200
+723  DEBUG [2016-05-15 11:35:56]  Server:nginx/1.6.1
+723  DEBUG [2016-05-15 11:35:56]  Date:Sun, 15 May 2016 03:35:49 GMT
+723  DEBUG [2016-05-15 11:35:56]  Content-Type:application/json ;charset=utf-8
+723  DEBUG [2016-05-15 11:35:56]  Content-Length:104
+724  DEBUG [2016-05-15 11:35:56]  Connection:keep-alive
+724  DEBUG [2016-05-15 11:35:56]  X-Powered-By:PHP/5.4.5
+724  DEBUG [2016-05-15 11:35:56]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+724  DEBUG [2016-05-15 11:35:56]  SINA-TS:OTQwOWMzNjggMCAxIDEgNSAxMAo=
+729  DEBUG [2016-05-15 11:35:56]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:42:44]  Request:
+1    DEBUG [2016-05-15 11:42:44]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+48   DEBUG [2016-05-15 11:42:44]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+48   DEBUG [2016-05-15 11:42:44]  API-RemoteIP: 192.168.1.120
+708  DEBUG [2016-05-15 11:42:45]  Response:
+708  DEBUG [2016-05-15 11:42:45]  https StatusCode:200
+708  DEBUG [2016-05-15 11:42:45]  Server:nginx/1.6.1
+708  DEBUG [2016-05-15 11:42:45]  Date:Sun, 15 May 2016 03:42:38 GMT
+708  DEBUG [2016-05-15 11:42:45]  Content-Type:application/json ;charset=utf-8
+708  DEBUG [2016-05-15 11:42:45]  Content-Length:104
+709  DEBUG [2016-05-15 11:42:45]  Connection:keep-alive
+709  DEBUG [2016-05-15 11:42:45]  X-Powered-By:PHP/5.4.5
+709  DEBUG [2016-05-15 11:42:45]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+709  DEBUG [2016-05-15 11:42:45]  SINA-TS:OTUwOWMzNjggMCAxIDEgNiAxMAo=
+713  DEBUG [2016-05-15 11:42:45]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:44:52]  Request:
+1    DEBUG [2016-05-15 11:44:52]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+48   DEBUG [2016-05-15 11:44:52]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+49   DEBUG [2016-05-15 11:44:52]  API-RemoteIP: 192.168.1.120
+807  DEBUG [2016-05-15 11:44:52]  Response:
+808  DEBUG [2016-05-15 11:44:52]  https StatusCode:200
+808  DEBUG [2016-05-15 11:44:52]  Server:nginx/1.6.1
+808  DEBUG [2016-05-15 11:44:52]  Date:Sun, 15 May 2016 03:44:46 GMT
+808  DEBUG [2016-05-15 11:44:52]  Content-Type:application/json ;charset=utf-8
+808  DEBUG [2016-05-15 11:44:52]  Content-Length:104
+808  DEBUG [2016-05-15 11:44:52]  Connection:keep-alive
+808  DEBUG [2016-05-15 11:44:52]  X-Powered-By:PHP/5.4.5
+808  DEBUG [2016-05-15 11:44:52]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+809  DEBUG [2016-05-15 11:44:52]  SINA-TS:NGE2ZWMzNjggMCAxIDEgNiAxMQo=
+814  DEBUG [2016-05-15 11:44:52]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:45:58]  Request:
+1    DEBUG [2016-05-15 11:45:58]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+43   DEBUG [2016-05-15 11:45:58]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+44   DEBUG [2016-05-15 11:45:58]  API-RemoteIP: 192.168.1.120
+1056 DEBUG [2016-05-15 11:45:59]  Response:
+1057 DEBUG [2016-05-15 11:45:59]  https StatusCode:200
+1057 DEBUG [2016-05-15 11:45:59]  Server:nginx/1.6.1
+1057 DEBUG [2016-05-15 11:45:59]  Date:Sun, 15 May 2016 03:45:52 GMT
+1057 DEBUG [2016-05-15 11:45:59]  Content-Type:application/json ;charset=utf-8
+1057 DEBUG [2016-05-15 11:45:59]  Content-Length:339
+1057 DEBUG [2016-05-15 11:45:59]  Connection:keep-alive
+1057 DEBUG [2016-05-15 11:45:59]  X-Powered-By:PHP/5.4.5
+1057 DEBUG [2016-05-15 11:45:59]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+1057 DEBUG [2016-05-15 11:45:59]  SINA-TS:NGI2ZWMzNjggMCAxIDEgNiAyNAo=
+1062 DEBUG [2016-05-15 11:45:59]  {"geos":[{"longitude":"116.498","latitude":"39.9527","city":"0010","province":"11","city_name":"北京市","province_name":"北京","district_name":"朝阳区","name":"嘉盛中心","street":"东三环北路甲19","tel":"010-58707788","distance":"116.626","direction":"NorthEast","address":"北京北京市朝阳区东三环北路甲19"}]}
+
+1068 INFO  [2016-05-15 11:45:59]  Geos [longitude = 116.498, latitude = 39.9527, city = 0010, province = 11, city_name = 北京市, province_name = 北京, address = 北京北京市朝阳区东三环北路甲19, pinyin = , more = ]
+0    DEBUG [2016-05-15 11:46:29]  Request:
+1    DEBUG [2016-05-15 11:46:29]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+45   DEBUG [2016-05-15 11:46:29]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+45   DEBUG [2016-05-15 11:46:29]  API-RemoteIP: 192.168.1.120
+728  DEBUG [2016-05-15 11:46:29]  Response:
+728  DEBUG [2016-05-15 11:46:29]  https StatusCode:200
+728  DEBUG [2016-05-15 11:46:29]  Server:nginx/1.6.1
+728  DEBUG [2016-05-15 11:46:29]  Date:Sun, 15 May 2016 03:46:23 GMT
+728  DEBUG [2016-05-15 11:46:29]  Content-Type:application/json ;charset=utf-8
+728  DEBUG [2016-05-15 11:46:29]  Content-Length:205
+728  DEBUG [2016-05-15 11:46:29]  Connection:keep-alive
+728  DEBUG [2016-05-15 11:46:29]  X-Powered-By:PHP/5.4.5
+729  DEBUG [2016-05-15 11:46:29]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+729  DEBUG [2016-05-15 11:46:29]  SINA-TS:NGE2ZWMzNjggMCAxIDEgNSA3MAo=
+734  DEBUG [2016-05-15 11:46:29]  {"geos":[{"longitude":"112.666","latitude":"22.0733","city":"0750","province":"44","city_name":"江门市","province_name":"广东省","district_name":"台山市","address":"广东省江门市台山市"}]}
+
+739  INFO  [2016-05-15 11:46:29]  Geos [longitude = 112.666, latitude = 22.0733, city = 0750, province = 44, city_name = 江门市, province_name = 广东省, address = 广东省江门市台山市, pinyin = , more = ]
+0    DEBUG [2016-05-15 11:53:28]  Request:
+1    DEBUG [2016-05-15 11:53:28]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+47   DEBUG [2016-05-15 11:53:28]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+47   DEBUG [2016-05-15 11:53:28]  API-RemoteIP: 192.168.1.120
+741  DEBUG [2016-05-15 11:53:28]  Response:
+741  DEBUG [2016-05-15 11:53:28]  https StatusCode:200
+741  DEBUG [2016-05-15 11:53:28]  Server:nginx/1.6.1
+741  DEBUG [2016-05-15 11:53:28]  Date:Sun, 15 May 2016 03:53:21 GMT
+742  DEBUG [2016-05-15 11:53:28]  Content-Type:application/json ;charset=utf-8
+742  DEBUG [2016-05-15 11:53:28]  Content-Length:104
+742  DEBUG [2016-05-15 11:53:28]  Connection:keep-alive
+742  DEBUG [2016-05-15 11:53:28]  X-Powered-By:PHP/5.4.5
+742  DEBUG [2016-05-15 11:53:28]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+742  DEBUG [2016-05-15 11:53:28]  SINA-TS:OTQwOWMzNjggMCAxIDEgNiAxMgo=
+746  DEBUG [2016-05-15 11:53:28]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:53:52]  Request:
+1    DEBUG [2016-05-15 11:53:52]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+51   DEBUG [2016-05-15 11:53:52]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+52   DEBUG [2016-05-15 11:53:52]  API-RemoteIP: 192.168.1.120
+768  DEBUG [2016-05-15 11:53:52]  Response:
+768  DEBUG [2016-05-15 11:53:52]  https StatusCode:200
+768  DEBUG [2016-05-15 11:53:52]  Server:nginx/1.6.1
+768  DEBUG [2016-05-15 11:53:52]  Date:Sun, 15 May 2016 03:53:45 GMT
+769  DEBUG [2016-05-15 11:53:52]  Content-Type:application/json ;charset=utf-8
+769  DEBUG [2016-05-15 11:53:52]  Content-Length:104
+769  DEBUG [2016-05-15 11:53:52]  Connection:keep-alive
+769  DEBUG [2016-05-15 11:53:52]  X-Powered-By:PHP/5.4.5
+769  DEBUG [2016-05-15 11:53:52]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+769  DEBUG [2016-05-15 11:53:52]  SINA-TS:NGI2ZWMzNjggMCAyIDIgNiAxMQo=
+773  DEBUG [2016-05-15 11:53:52]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:54:49]  Request:
+0    DEBUG [2016-05-15 11:54:49]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+56   DEBUG [2016-05-15 11:54:49]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+56   DEBUG [2016-05-15 11:54:49]  API-RemoteIP: 192.168.1.120
+844  DEBUG [2016-05-15 11:54:49]  Response:
+845  DEBUG [2016-05-15 11:54:49]  https StatusCode:200
+845  DEBUG [2016-05-15 11:54:49]  Server:nginx/1.6.1
+845  DEBUG [2016-05-15 11:54:49]  Date:Sun, 15 May 2016 03:54:43 GMT
+845  DEBUG [2016-05-15 11:54:49]  Content-Type:application/json ;charset=utf-8
+845  DEBUG [2016-05-15 11:54:49]  Content-Length:104
+845  DEBUG [2016-05-15 11:54:49]  Connection:keep-alive
+845  DEBUG [2016-05-15 11:54:49]  X-Powered-By:PHP/5.3.16
+845  DEBUG [2016-05-15 11:54:49]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+845  DEBUG [2016-05-15 11:54:49]  SINA-TS:OTUwOWMzNjggMCAxIDEgNiA4MQo=
+849  DEBUG [2016-05-15 11:54:49]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:55:15]  Request:
+0    DEBUG [2016-05-15 11:55:15]  GET:https://api.weibo.com/2/location/geo/is_domestic.json
+42   DEBUG [2016-05-15 11:55:15]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+42   DEBUG [2016-05-15 11:55:15]  API-RemoteIP: 192.168.1.120
+660  DEBUG [2016-05-15 11:55:16]  Response:
+660  DEBUG [2016-05-15 11:55:16]  https StatusCode:200
+660  DEBUG [2016-05-15 11:55:16]  Server:nginx/1.6.1
+660  DEBUG [2016-05-15 11:55:16]  Date:Sun, 15 May 2016 03:55:09 GMT
+660  DEBUG [2016-05-15 11:55:16]  Content-Type:application/json ;charset=utf-8
+660  DEBUG [2016-05-15 11:55:16]  Content-Length:100
+660  DEBUG [2016-05-15 11:55:16]  Connection:keep-alive
+660  DEBUG [2016-05-15 11:55:16]  X-Powered-By:PHP/5.4.5
+660  DEBUG [2016-05-15 11:55:16]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+660  DEBUG [2016-05-15 11:55:16]  SINA-TS:NGE2ZWMzNjggMCAyIDIgNCAxMAo=
+665  DEBUG [2016-05-15 11:55:16]  {"request":"/2/location/geo/is_domestic.json","error_code":"21906","error":"Coordinates is illegal"}
+
+670  INFO  [2016-05-15 11:55:16]  {"error":"Coordinates is illegal","request":"/2/location/geo/is_domestic.json","error_code":"21906"}
+0    DEBUG [2016-05-15 11:55:55]  Request:
+1    DEBUG [2016-05-15 11:55:55]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+40   DEBUG [2016-05-15 11:55:55]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+41   DEBUG [2016-05-15 11:55:55]  API-RemoteIP: 192.168.1.120
+749  DEBUG [2016-05-15 11:55:56]  Response:
+749  DEBUG [2016-05-15 11:55:56]  https StatusCode:200
+749  DEBUG [2016-05-15 11:55:56]  Server:nginx/1.6.1
+749  DEBUG [2016-05-15 11:55:56]  Date:Sun, 15 May 2016 03:55:49 GMT
+750  DEBUG [2016-05-15 11:55:56]  Content-Type:application/json ;charset=utf-8
+750  DEBUG [2016-05-15 11:55:56]  Content-Length:104
+750  DEBUG [2016-05-15 11:55:56]  Connection:keep-alive
+750  DEBUG [2016-05-15 11:55:56]  X-Powered-By:PHP/5.4.5
+750  DEBUG [2016-05-15 11:55:56]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+750  DEBUG [2016-05-15 11:55:56]  SINA-TS:OTcwOWMzNjggMCAxIDEgNSAxMQo=
+756  DEBUG [2016-05-15 11:55:56]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:55:59]  Request:
+1    DEBUG [2016-05-15 11:55:59]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+42   DEBUG [2016-05-15 11:55:59]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+43   DEBUG [2016-05-15 11:55:59]  API-RemoteIP: 192.168.1.120
+622  DEBUG [2016-05-15 11:56:00]  Response:
+622  DEBUG [2016-05-15 11:56:00]  https StatusCode:200
+622  DEBUG [2016-05-15 11:56:00]  Server:nginx/1.6.1
+622  DEBUG [2016-05-15 11:56:00]  Date:Sun, 15 May 2016 03:55:53 GMT
+622  DEBUG [2016-05-15 11:56:00]  Content-Type:application/json ;charset=utf-8
+622  DEBUG [2016-05-15 11:56:00]  Content-Length:104
+623  DEBUG [2016-05-15 11:56:00]  Connection:keep-alive
+623  DEBUG [2016-05-15 11:56:00]  X-Powered-By:PHP/5.4.5
+623  DEBUG [2016-05-15 11:56:00]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+623  DEBUG [2016-05-15 11:56:00]  SINA-TS:OTcwOWMzNjggMCAxIDEgNSAxMAo=
+629  DEBUG [2016-05-15 11:56:00]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:57:18]  Request:
+1    DEBUG [2016-05-15 11:57:18]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+47   DEBUG [2016-05-15 11:57:18]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+47   DEBUG [2016-05-15 11:57:18]  API-RemoteIP: 192.168.1.120
+1824 DEBUG [2016-05-15 11:57:20]  Response:
+1825 DEBUG [2016-05-15 11:57:20]  https StatusCode:200
+1825 DEBUG [2016-05-15 11:57:20]  Server:nginx/1.6.1
+1825 DEBUG [2016-05-15 11:57:20]  Date:Sun, 15 May 2016 03:57:13 GMT
+1825 DEBUG [2016-05-15 11:57:20]  Content-Type:application/json ;charset=utf-8
+1825 DEBUG [2016-05-15 11:57:20]  Content-Length:104
+1825 DEBUG [2016-05-15 11:57:20]  Connection:keep-alive
+1825 DEBUG [2016-05-15 11:57:20]  X-Powered-By:PHP/5.4.5
+1825 DEBUG [2016-05-15 11:57:20]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+1825 DEBUG [2016-05-15 11:57:20]  SINA-TS:NGI2ZWMzNjggMCAxIDEgNiA5Cg==
+1830 DEBUG [2016-05-15 11:57:20]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:57:34]  Request:
+1    DEBUG [2016-05-15 11:57:34]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+53   DEBUG [2016-05-15 11:57:34]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+53   DEBUG [2016-05-15 11:57:34]  API-RemoteIP: 192.168.1.120
+769  DEBUG [2016-05-15 11:57:34]  Response:
+769  DEBUG [2016-05-15 11:57:34]  https StatusCode:200
+769  DEBUG [2016-05-15 11:57:34]  Server:nginx/1.6.1
+769  DEBUG [2016-05-15 11:57:34]  Date:Sun, 15 May 2016 03:57:28 GMT
+769  DEBUG [2016-05-15 11:57:34]  Content-Type:application/json ;charset=utf-8
+769  DEBUG [2016-05-15 11:57:34]  Content-Length:339
+769  DEBUG [2016-05-15 11:57:34]  Connection:keep-alive
+770  DEBUG [2016-05-15 11:57:34]  X-Powered-By:PHP/5.4.5
+770  DEBUG [2016-05-15 11:57:34]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+770  DEBUG [2016-05-15 11:57:34]  SINA-TS:OTcwOWMzNjggMCAxIDEgNiAyMwo=
+774  DEBUG [2016-05-15 11:57:35]  {"geos":[{"longitude":"116.498","latitude":"39.9527","city":"0010","province":"11","city_name":"北京市","province_name":"北京","district_name":"朝阳区","name":"嘉盛中心","street":"东三环北路甲19","tel":"010-58707788","distance":"116.626","direction":"NorthEast","address":"北京北京市朝阳区东三环北路甲19"}]}
+
+780  INFO  [2016-05-15 11:57:35]  Geos [longitude = 116.498, latitude = 39.9527, city = 0010, province = 11, city_name = 北京市, province_name = 北京, address = 北京北京市朝阳区东三环北路甲19, pinyin = , more = ]
+1    DEBUG [2016-05-15 11:58:10]  Request:
+2    DEBUG [2016-05-15 11:58:10]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+43   DEBUG [2016-05-15 11:58:10]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+43   DEBUG [2016-05-15 11:58:10]  API-RemoteIP: 192.168.1.120
+697  DEBUG [2016-05-15 11:58:11]  Response:
+697  DEBUG [2016-05-15 11:58:11]  https StatusCode:200
+697  DEBUG [2016-05-15 11:58:11]  Server:nginx/1.6.1
+697  DEBUG [2016-05-15 11:58:11]  Date:Sun, 15 May 2016 03:58:04 GMT
+698  DEBUG [2016-05-15 11:58:11]  Content-Type:application/json ;charset=utf-8
+698  DEBUG [2016-05-15 11:58:11]  Content-Length:104
+698  DEBUG [2016-05-15 11:58:11]  Connection:keep-alive
+698  DEBUG [2016-05-15 11:58:11]  X-Powered-By:PHP/5.4.5
+698  DEBUG [2016-05-15 11:58:11]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+698  DEBUG [2016-05-15 11:58:11]  SINA-TS:NGE2ZWMzNjggMCAyIDIgNiA5Cg==
+702  DEBUG [2016-05-15 11:58:11]  {"request":"/2/location/geo/geo_to_address.json","error_code":"21907","error":"Coordinate out of range"}
+
+0    DEBUG [2016-05-15 11:58:19]  Request:
+1    DEBUG [2016-05-15 11:58:19]  GET:https://api.weibo.com/2/location/geo/geo_to_address.json
+46   DEBUG [2016-05-15 11:58:19]  Authorization: OAuth2 2.00p5nQcDYcNYoB9c962a841bOAAGQC
+46   DEBUG [2016-05-15 11:58:19]  API-RemoteIP: 192.168.1.120
+630  DEBUG [2016-05-15 11:58:20]  Response:
+630  DEBUG [2016-05-15 11:58:20]  https StatusCode:200
+630  DEBUG [2016-05-15 11:58:20]  Server:nginx/1.6.1
+630  DEBUG [2016-05-15 11:58:20]  Date:Sun, 15 May 2016 03:58:13 GMT
+630  DEBUG [2016-05-15 11:58:20]  Content-Type:application/json ;charset=utf-8
+630  DEBUG [2016-05-15 11:58:20]  Content-Length:205
+630  DEBUG [2016-05-15 11:58:20]  Connection:keep-alive
+631  DEBUG [2016-05-15 11:58:20]  X-Powered-By:PHP/5.4.5
+631  DEBUG [2016-05-15 11:58:20]  SINA-LB:aGwuMTAuc2czLmZ0LmxiLnNpbmFub2RlLmNvbQ==
+631  DEBUG [2016-05-15 11:58:20]  SINA-TS:OTQwOWMzNjggMCAxIDEgNiAxOQo=
+635  DEBUG [2016-05-15 11:58:20]  {"geos":[{"longitude":"112.666","latitude":"22.0733","city":"0750","province":"44","city_name":"江门市","province_name":"广东省","district_name":"台山市","address":"广东省江门市台山市"}]}
+
+641  INFO  [2016-05-15 11:58:20]  Geos [longitude = 112.666, latitude = 22.0733, city = 0750, province = 44, city_name = 江门市, province_name = 广东省, address = 广东省江门市台山市, pinyin = , more = ]
+1    INFO  [2016-08-09 20:17:43]  code: d759596e534ad35a1c1d67ffed45741a
+5    DEBUG [2016-08-09 20:17:43]  Request:
+5    DEBUG [2016-08-09 20:17:43]  POSThttps://api.weibo.com/oauth2/access_token
+1107 DEBUG [2016-08-09 20:17:44]  Response:
+1107 DEBUG [2016-08-09 20:17:44]  https StatusCode:200
+1108 DEBUG [2016-08-09 20:17:44]  Server:nginx/1.6.1
+1108 DEBUG [2016-08-09 20:17:44]  Date:Tue, 09 Aug 2016 12:17:43 GMT
+1108 DEBUG [2016-08-09 20:17:44]  Content-Type:text/plain;charset=UTF-8
+1108 DEBUG [2016-08-09 20:17:44]  Content-Length:117
+1108 DEBUG [2016-08-09 20:17:44]  Connection:keep-alive
+1108 DEBUG [2016-08-09 20:17:44]  Pragma:No-cache
+1109 DEBUG [2016-08-09 20:17:44]  Cache-Control:no-cache
+1109 DEBUG [2016-08-09 20:17:44]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
+1109 DEBUG [2016-08-09 20:17:44]  Api-Server-IP:10.75.25.86
+1112 DEBUG [2016-08-09 20:17:44]  {"access_token":"2.00p5nQcDYcNYoB8806cda7a2e9HuLB","remind_in":"157679999","expires_in":157679999,"uid":"3313902407"}
+

@@ -1,0 +1,221 @@
+3604 INFO  [2016-05-09 23:31:00]  HHH000108: Foreign keys: []
+3604 INFO  [2016-05-09 23:31:00]  HHH000126: Indexes: [primary]
+3629 INFO  [2016-05-09 23:31:00]  HHH000261: Table found: sjpcmaven.status
+3630 INFO  [2016-05-09 23:31:00]  HHH000037: Columns: [thumbnailpic, inreplytouserid, text, geo, retweetedstatus, inreplytostatusid, source_id, mlevel, truncated, createdat, id, visible_id, repostscount, favorited, bmiddlepic, inreplytoscreenname, user_id, longitude, mid, annotations, latitude, commentscount, originalpic]
+3630 INFO  [2016-05-09 23:31:00]  HHH000108: Foreign keys: [fk_nls7fk5lkh9p6qsmppg2715ps, fk_29jeo70r8smcmqnrsijb1i6hm, fk_p1rm676hi0x8p0d00mygsi7n2]
+3630 INFO  [2016-05-09 23:31:00]  HHH000126: Indexes: [fk_nls7fk5lkh9p6qsmppg2715ps, fk_29jeo70r8smcmqnrsijb1i6hm, fk_p1rm676hi0x8p0d00mygsi7n2, primary]
+3648 INFO  [2016-05-09 23:31:00]  HHH000261: Table found: sjpcmaven.user
+3649 INFO  [2016-05-09 23:31:00]  HHH000037: Columns: [screenname, location, remark, followme, createdat, lang, avatarlarge, friendscount, city, id, allowallcomment, verified, description, name, province, gender, weihao, allowallactmsg, verifiedtype, statusescount, userdomain, bifollowerscount, onlinestatus, verifiedreason, profileimageurl, url, followerscount, favouritescount]
+3649 INFO  [2016-05-09 23:31:00]  HHH000108: Foreign keys: []
+3649 INFO  [2016-05-09 23:31:00]  HHH000126: Indexes: [primary]
+3658 INFO  [2016-05-09 23:31:00]  HHH000261: Table found: sjpcmaven.visible
+3658 INFO  [2016-05-09 23:31:00]  HHH000037: Columns: [type, list_id]
+3658 INFO  [2016-05-09 23:31:00]  HHH000108: Foreign keys: []
+3658 INFO  [2016-05-09 23:31:00]  HHH000126: Indexes: [primary]
+3658 DEBUG [2016-05-09 23:31:00]  Setting dialect [org.hibernate.dialect.MySQLDialect]
+3659 DEBUG [2016-05-09 23:31:00]  Setting dialect [org.hibernate.dialect.MySQLDialect]
+3659 DEBUG [2016-05-09 23:31:00]  Setting dialect [org.hibernate.dialect.MySQLDialect]
+3659 DEBUG [2016-05-09 23:31:00]  Setting dialect [org.hibernate.dialect.MySQLDialect]
+3659 INFO  [2016-05-09 23:31:00]  HHH000232: Schema update complete
+3660 DEBUG [2016-05-09 23:31:00]  trace com.mchange.v2.resourcepool.BasicResourcePool@1b08f35f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@13bdbb15)
+3660 DEBUG [2016-05-09 23:31:00]  com.mchange.v2.c3p0.impl.NewProxyConnection@23da34b5: close() called more than once.
+3663 DEBUG [2016-05-09 23:31:00]  Checking 0 named HQL queries
+3663 DEBUG [2016-05-09 23:31:00]  Checking 0 named SQL queries
+3669 DEBUG [2016-05-09 23:31:00]  Statistics initialized [enabled=false]
+3669 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3669 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3681 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'sessionFactory'
+3681 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3681 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3716 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3716 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3745 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'statusDao'
+3746 DEBUG [2016-05-09 23:31:00]  Autowiring by type from bean name 'searchPublicTimeLineService' to bean named 'statusDao'
+3746 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'searchPublicTimeLineService': AutowiredFieldElement for private org.sjpc.dao.VisibleDao org.sjpc.service.SearchPublicTimeLineService.visibleDao
+3747 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'visibleDao'
+3747 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'visibleDao'
+3747 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3748 DEBUG [2016-05-09 23:31:00]  Registered injected element on class [org.sjpc.dao.impl.VisibleDaoImpl]: ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3748 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'visibleDao' to allow for resolving potential circular references
+3750 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'visibleDao': ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3750 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sessionFactory'
+3751 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3751 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3752 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'visibleDao'
+3752 DEBUG [2016-05-09 23:31:00]  Autowiring by type from bean name 'searchPublicTimeLineService' to bean named 'visibleDao'
+3752 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'searchPublicTimeLineService': AutowiredFieldElement for private org.sjpc.dao.UserDao org.sjpc.service.SearchPublicTimeLineService.userDao
+3753 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'userDao'
+3753 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'userDao'
+3753 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3754 DEBUG [2016-05-09 23:31:00]  Registered injected element on class [org.sjpc.dao.impl.UserDaoImpl]: ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3754 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'userDao' to allow for resolving potential circular references
+3756 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'userDao': ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3761 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sessionFactory'
+3761 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3761 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3763 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'userDao'
+3763 DEBUG [2016-05-09 23:31:00]  Autowiring by type from bean name 'searchPublicTimeLineService' to bean named 'userDao'
+3763 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'searchPublicTimeLineService': AutowiredFieldElement for private org.sjpc.dao.SourceDao org.sjpc.service.SearchPublicTimeLineService.sourceDao
+3764 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'sourceDao'
+3764 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'sourceDao'
+3764 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3765 DEBUG [2016-05-09 23:31:00]  Registered injected element on class [org.sjpc.dao.impl.SourceDaoImpl]: ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3766 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'sourceDao' to allow for resolving potential circular references
+3770 DEBUG [2016-05-09 23:31:00]  Processing injected method of bean 'sourceDao': ResourceElement for public void org.sjpc.dao.impl.BaseDaoImpl.setSessionFactory(org.hibernate.SessionFactory)
+3770 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sessionFactory'
+3770 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3770 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3772 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'sourceDao'
+3773 DEBUG [2016-05-09 23:31:00]  Autowiring by type from bean name 'searchPublicTimeLineService' to bean named 'sourceDao'
+3773 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3773 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3778 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'txAdvice'
+3778 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'txAdvice'
+3783 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'txAdvice' to allow for resolving potential circular references
+3790 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'transactionManager'
+3790 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'transactionManager'
+3790 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3805 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+3815 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sessionFactory'
+3815 DEBUG [2016-05-09 23:31:00]  Invoking afterPropertiesSet() on bean with name 'transactionManager'
+3836 INFO  [2016-05-09 23:31:00]  Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqub5x9g15nqf5hvpvjds|15cbeebb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqub5x9g15nqf5hvpvjds|15cbeebb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///sjpcmaven, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+3839 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3839 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3844 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'transactionManager'
+3845 DEBUG [2016-05-09 23:31:00]  Creating instance of bean '(inner bean)#241377b6'
+3845 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3849 DEBUG [2016-05-09 23:31:00]  Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+3850 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3850 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3851 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean '(inner bean)#241377b6'
+3852 DEBUG [2016-05-09 23:31:00]  Invoking afterPropertiesSet() on bean with name 'txAdvice'
+3852 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'txAdvice'
+3862 DEBUG [2016-05-09 23:31:00]  Creating implicit proxy for bean 'searchPublicTimeLineService' with 0 common interceptors and 2 specific interceptors
+3873 DEBUG [2016-05-09 23:31:00]  Creating CGLIB proxy: target source is SingletonTargetSource for target object [org.sjpc.service.SearchPublicTimeLineService@206b697b]
+3941 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: public void org.sjpc.service.SearchPublicTimeLineService.addStatusWapper(weibo4j.model.StatusWapper)
+3942 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: public void org.sjpc.service.SearchPublicTimeLineService.getPublicTimeLine(java.lang.String)
+3942 DEBUG [2016-05-09 23:31:00]  Found finalize() method - using NO_OVERRIDE
+3942 DEBUG [2016-05-09 23:31:00]  Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+3942 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+3942 DEBUG [2016-05-09 23:31:00]  Found 'hashCode' method: public native int java.lang.Object.hashCode()
+3942 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+3942 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+3943 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+3962 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'searchPublicTimeLineService'
+3962 DEBUG [2016-05-09 23:31:00]  Creating shared instance of singleton bean 'startService'
+3962 DEBUG [2016-05-09 23:31:00]  Creating instance of bean 'startService'
+3963 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3966 DEBUG [2016-05-09 23:31:00]  Eagerly caching bean 'startService' to allow for resolving potential circular references
+3968 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3968 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3969 DEBUG [2016-05-09 23:31:00]  Creating implicit proxy for bean 'startService' with 0 common interceptors and 2 specific interceptors
+3969 DEBUG [2016-05-09 23:31:00]  Creating CGLIB proxy: target source is SingletonTargetSource for target object [org.sjpc.service.StartService@442817ee]
+3970 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: public void org.sjpc.service.StartService.startSearch()
+3970 DEBUG [2016-05-09 23:31:00]  Found finalize() method - using NO_OVERRIDE
+3970 DEBUG [2016-05-09 23:31:00]  Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+3970 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+3970 DEBUG [2016-05-09 23:31:00]  Found 'hashCode' method: public native int java.lang.Object.hashCode()
+3971 DEBUG [2016-05-09 23:31:00]  Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+3971 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+3972 DEBUG [2016-05-09 23:31:00]  Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+3984 DEBUG [2016-05-09 23:31:00]  Finished creating instance of bean 'startService'
+3984 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sourceDao'
+3985 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'statusDao'
+3985 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'userDao'
+3985 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'visibleDao'
+3985 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'dataSource'
+3985 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'sessionFactory'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'transactionManager'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'txAdvice'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+3986 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+3988 DEBUG [2016-05-09 23:31:00]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@277f4c02]
+3989 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'lifecycleProcessor'
+3992 DEBUG [2016-05-09 23:31:00]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+3992 DEBUG [2016-05-09 23:31:00]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+3992 DEBUG [2016-05-09 23:31:00]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+3993 DEBUG [2016-05-09 23:31:00]  Returning cached instance of singleton bean 'startService'
+0    DEBUG [2016-05-10 10:23:28]  Adding [systemProperties] PropertySource with lowest search precedence
+3    DEBUG [2016-05-10 10:23:28]  Adding [systemEnvironment] PropertySource with lowest search precedence
+4    DEBUG [2016-05-10 10:23:28]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+9    INFO  [2016-05-10 10:23:28]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c996f0e: startup date [Tue May 10 10:23:28 CST 2016]; root of context hierarchy
+56   DEBUG [2016-05-10 10:23:28]  Adding [systemProperties] PropertySource with lowest search precedence
+56   DEBUG [2016-05-10 10:23:28]  Adding [systemEnvironment] PropertySource with lowest search precedence
+57   DEBUG [2016-05-10 10:23:28]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+75   INFO  [2016-05-10 10:23:28]  Loading XML bean definitions from class path resource [application-context.xml]
+0    DEBUG [2016-05-10 13:32:41]  Adding [systemProperties] PropertySource with lowest search precedence
+29   DEBUG [2016-05-10 13:32:41]  Adding [systemEnvironment] PropertySource with lowest search precedence
+29   DEBUG [2016-05-10 13:32:41]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+47   INFO  [2016-05-10 13:32:41]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d4a0698: startup date [Tue May 10 13:32:41 CST 2016]; root of context hierarchy
+210  DEBUG [2016-05-10 13:32:41]  Adding [systemProperties] PropertySource with lowest search precedence
+211  DEBUG [2016-05-10 13:32:41]  Adding [systemEnvironment] PropertySource with lowest search precedence
+211  DEBUG [2016-05-10 13:32:41]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+348  INFO  [2016-05-10 13:32:41]  Loading XML bean definitions from class path resource [application-context.xml]
+0    DEBUG [2016-05-15 12:13:02]  Adding [systemProperties] PropertySource with lowest search precedence
+5    DEBUG [2016-05-15 12:13:02]  Adding [systemEnvironment] PropertySource with lowest search precedence
+6    DEBUG [2016-05-15 12:13:02]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14   INFO  [2016-05-15 12:13:02]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2157a5c3: startup date [Sun May 15 12:13:02 CST 2016]; root of context hierarchy
+89   DEBUG [2016-05-15 12:13:03]  Adding [systemProperties] PropertySource with lowest search precedence
+89   DEBUG [2016-05-15 12:13:03]  Adding [systemEnvironment] PropertySource with lowest search precedence
+89   DEBUG [2016-05-15 12:13:03]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+129  INFO  [2016-05-15 12:13:03]  Loading XML bean definitions from class path resource [application-context.xml]
+0    DEBUG [2016-05-16 22:40:16]  Adding [systemProperties] PropertySource with lowest search precedence
+37   DEBUG [2016-05-16 22:40:16]  Adding [systemEnvironment] PropertySource with lowest search precedence
+37   DEBUG [2016-05-16 22:40:16]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+42   INFO  [2016-05-16 22:40:16]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d8083b3: startup date [Mon May 16 22:40:16 CST 2016]; root of context hierarchy
+142  DEBUG [2016-05-16 22:40:16]  Adding [systemProperties] PropertySource with lowest search precedence
+142  DEBUG [2016-05-16 22:40:16]  Adding [systemEnvironment] PropertySource with lowest search precedence
+142  DEBUG [2016-05-16 22:40:16]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+173  INFO  [2016-05-16 22:40:16]  Loading XML bean definitions from class path resource [application-context.xml]
+0    DEBUG [2016-05-18 21:08:52]  Adding [systemProperties] PropertySource with lowest search precedence
+6    DEBUG [2016-05-18 21:08:52]  Adding [systemEnvironment] PropertySource with lowest search precedence
+6    DEBUG [2016-05-18 21:08:52]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14   INFO  [2016-05-18 21:08:52]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7722306c: startup date [Wed May 18 21:08:52 CST 2016]; root of context hierarchy
+75   DEBUG [2016-05-18 21:08:52]  Adding [systemProperties] PropertySource with lowest search precedence
+75   DEBUG [2016-05-18 21:08:52]  Adding [systemEnvironment] PropertySource with lowest search precedence
+76   DEBUG [2016-05-18 21:08:52]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+98   INFO  [2016-05-18 21:08:52]  Loading XML bean definitions from class path resource [application-context.xml]

@@ -1,0 +1,1107 @@
+3409 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d65e4c4]
+3409 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3409 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3409 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3410 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3410 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3410 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3411 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3412 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3413 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@54917c5e]
+3413 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3413 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3413 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3413 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3414 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3415 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3415 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [FORCE]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=? for update
+3416 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b7c2ab2]
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3416 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3417 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3418 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55fa0b27]
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3418 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3419 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3419 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3420 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3420 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [PESSIMISTIC_READ]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=? lock in share mode
+3420 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12f2598a]
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3420 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3421 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3422 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a499002]
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3422 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3422 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3423 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3424 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3424 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [PESSIMISTIC_WRITE]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=? for update
+3424 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@338d9133]
+3424 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3424 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3424 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3425 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3426 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3426 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3426 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3426 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3426 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3427 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@32953995]
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3427 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3428 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3428 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3428 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3429 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3429 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [PESSIMISTIC_FORCE_INCREMENT]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=? for update
+3429 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@62f77f24]
+3429 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3430 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3431 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3432 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3432 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3432 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3432 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52e96c23]
+3432 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3432 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3433 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3433 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3433 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3434 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3434 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [OPTIMISTIC]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=?
+3434 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5aba985b]
+3434 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3434 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3434 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3435 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3436 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3437 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3437 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3437 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@482f3874]
+3437 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3437 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3437 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3437 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3438 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3438 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Status)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Status, querySpaceUid=<gen:0>, path=weibo4j.model.Status)
+          - EntityAttributeFetchImpl(entity=weibo4j.model.User, querySpaceUid=<gen:1>, path=weibo4j.model.Status.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Status)
+          - SQL table alias mapping - status0_
+          - alias suffix - 0_
+          - suffixed key columns - {mid1_1_0_}
+
+3439 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Status [OPTIMISTIC_FORCE_INCREMENT]: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=?
+3459 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_MERGE on entity weibo4j.model.Status: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=?
+3460 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_REFRESH on entity weibo4j.model.Status: select status0_.mid as mid1_1_0_, status0_.annotations as annotati2_1_0_, status0_.bmiddlePic as bmiddleP3_1_0_, status0_.commentsCount as comments4_1_0_, status0_.createdAt as createdA5_1_0_, status0_.favorited as favorite6_1_0_, status0_.geo as geo7_1_0_, status0_.id as id8_1_0_, status0_.inReplyToScreenName as inReplyT9_1_0_, status0_.inReplyToStatusId as inReply10_1_0_, status0_.inReplyToUserId as inReply11_1_0_, status0_.latitude as latitud12_1_0_, status0_.longitude as longitu13_1_0_, status0_.mlevel as mlevel14_1_0_, status0_.originalPic as origina15_1_0_, status0_.repostsCount as reposts16_1_0_, status0_.retweetedStatus as retweet17_1_0_, status0_.source_id as source_18_1_0_, status0_.text as text19_1_0_, status0_.thumbnailPic as thumbna20_1_0_, status0_.truncated as truncat21_1_0_, status0_.user_id as user_id22_1_0_, status0_.visible_id as visible23_1_0_ from status status0_ where status0_.mid=?
+3460 DEBUG [2016-05-09 23:31:00]  Static SQL for entity: weibo4j.model.Visible
+3460 DEBUG [2016-05-09 23:31:00]   Version select: select type from visible where type =?
+3460 DEBUG [2016-05-09 23:31:00]   Snapshot select: select visible_.type, visible_.list_id as list_id2_3_ from visible visible_ where visible_.type=?
+3460 DEBUG [2016-05-09 23:31:00]   Insert 0: insert into visible (list_id, type) values (?, ?)
+3461 DEBUG [2016-05-09 23:31:00]   Update 0: update visible set list_id=? where type=?
+3461 DEBUG [2016-05-09 23:31:00]   Delete 0: delete from visible where type=?
+3461 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72c619d]
+3461 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3461 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3462 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3462 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3462 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [NONE]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3462 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@39150481]
+3462 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3463 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3463 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3463 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3463 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [READ]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3463 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5b26a16d]
+3464 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3464 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3464 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3464 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3464 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [UPGRADE]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3464 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d0c0c59]
+3464 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3464 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3465 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3465 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3465 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [UPGRADE_NOWAIT]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3465 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41c70651]
+3465 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3465 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3465 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3466 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3466 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [UPGRADE_SKIPLOCKED]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3466 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64284413]
+3466 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3466 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3466 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3467 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3467 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [FORCE]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3467 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e630dd6]
+3467 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3467 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3467 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3468 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3468 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [PESSIMISTIC_READ]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? lock in share mode
+3468 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f2af86b]
+3468 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3468 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3468 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3468 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3469 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [PESSIMISTIC_WRITE]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3469 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bcd88d0]
+3469 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3469 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3469 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3469 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3469 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [PESSIMISTIC_FORCE_INCREMENT]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=? for update
+3470 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@55557b72]
+3470 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3470 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3470 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3470 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3470 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [OPTIMISTIC]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3470 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ff68bf6]
+3471 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list_id
+3471 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3471 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3471 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Visible)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Visible, querySpaceUid=<gen:0>, path=weibo4j.model.Visible)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Visible)
+          - SQL table alias mapping - visible0_
+          - alias suffix - 0_
+          - suffixed key columns - {type1_3_0_}
+
+3471 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Visible [OPTIMISTIC_FORCE_INCREMENT]: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3471 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_MERGE on entity weibo4j.model.Visible: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3472 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_REFRESH on entity weibo4j.model.Visible: select visible0_.type as type1_3_0_, visible0_.list_id as list_id2_3_0_ from visible visible0_ where visible0_.type=?
+3472 DEBUG [2016-05-09 23:31:00]  Static SQL for entity: weibo4j.model.User
+3472 DEBUG [2016-05-09 23:31:00]   Version select: select id from user where id =?
+3472 DEBUG [2016-05-09 23:31:00]   Snapshot select: select user_.id, user_.allowAllActMsg as allowAll2_2_, user_.allowAllComment as allowAll3_2_, user_.avatarLarge as avatarLa4_2_, user_.biFollowersCount as biFollow5_2_, user_.city as city6_2_, user_.createdAt as createdA7_2_, user_.description as descript8_2_, user_.favouritesCount as favourit9_2_, user_.followMe as followM10_2_, user_.followersCount as followe11_2_, user_.friendsCount as friends12_2_, user_.gender as gender13_2_, user_.lang as lang14_2_, user_.location as locatio15_2_, user_.name as name16_2_, user_.onlineStatus as onlineS17_2_, user_.profileImageUrl as profile18_2_, user_.province as provinc19_2_, user_.remark as remark20_2_, user_.screenName as screenN21_2_, user_.statusesCount as statuse22_2_, user_.url as url23_2_, user_.userDomain as userDom24_2_, user_.verified as verifie25_2_, user_.verifiedReason as verifie26_2_, user_.verifiedType as verifie27_2_, user_.weihao as weihao28_2_ from user user_ where user_.id=?
+3473 DEBUG [2016-05-09 23:31:00]   Insert 0: insert into user (allowAllActMsg, allowAllComment, avatarLarge, biFollowersCount, city, createdAt, description, favouritesCount, followMe, followersCount, friendsCount, gender, lang, location, name, onlineStatus, profileImageUrl, province, remark, screenName, statusesCount, url, userDomain, verified, verifiedReason, verifiedType, weihao, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+3473 DEBUG [2016-05-09 23:31:00]   Update 0: update user set allowAllActMsg=?, allowAllComment=?, avatarLarge=?, biFollowersCount=?, city=?, createdAt=?, description=?, favouritesCount=?, followMe=?, followersCount=?, friendsCount=?, gender=?, lang=?, location=?, name=?, onlineStatus=?, profileImageUrl=?, province=?, remark=?, screenName=?, statusesCount=?, url=?, userDomain=?, verified=?, verifiedReason=?, verifiedType=?, weihao=? where id=?
+3473 DEBUG [2016-05-09 23:31:00]   Delete 0: delete from user where id=?
+3473 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@448d07a0]
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3473 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3474 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3475 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3475 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3476 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3476 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3477 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [NONE]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3477 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6542c9ed]
+3477 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3477 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3477 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3477 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3477 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3478 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3479 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3480 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3480 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3480 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3480 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3481 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3481 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [READ]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3482 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f0f9da5]
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3482 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3483 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3483 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3483 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3483 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3483 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3484 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3484 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3484 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3484 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3484 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3485 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3486 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3487 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3487 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3489 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3490 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [UPGRADE]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3490 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@636eba72]
+3491 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3491 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3491 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3491 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3491 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3492 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3493 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3495 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3496 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3497 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3497 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3497 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3497 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3498 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3499 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3499 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [UPGRADE_NOWAIT]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3501 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@39db9b89]
+3501 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3501 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3501 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3502 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3502 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3502 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3502 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3503 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3504 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3505 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3505 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3507 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3507 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3507 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@551cbf36]
+3507 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3507 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3507 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3508 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3509 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3510 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3512 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3512 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3513 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3513 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3513 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3513 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3514 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3514 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [FORCE]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3514 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65b848fd]
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3515 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3516 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3517 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3517 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3517 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3517 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3518 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3518 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [PESSIMISTIC_READ]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? lock in share mode
+3518 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63e5503d]
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3518 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3519 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3519 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3520 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3520 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3520 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [PESSIMISTIC_WRITE]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3520 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f3036d6]
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3521 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3522 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3522 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3522 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3523 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3523 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=? for update
+3523 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5e543a1f]
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3523 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3524 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3524 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3525 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3525 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3525 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [OPTIMISTIC]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3525 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74c824b3]
+3525 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllActMsg
+3525 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : allowAllComment
+3525 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : avatarLarge
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : biFollowersCount
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : city
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : description
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favouritesCount
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followMe
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : followersCount
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : friendsCount
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : gender
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : lang
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : list
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : location
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : onlineStatus
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : profileImageUrl
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : province
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : remark
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : screenName
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : statusesCount
+3526 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : url
+3527 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userDomain
+3527 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verified
+3527 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedReason
+3527 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : verifiedType
+3527 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : weihao
+3527 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3527 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3527 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.User)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.User, querySpaceUid=<gen:0>, path=weibo4j.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3528 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3529 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_MERGE on entity weibo4j.model.User: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3529 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_REFRESH on entity weibo4j.model.User: select user0_.id as id1_2_0_, user0_.allowAllActMsg as allowAll2_2_0_, user0_.allowAllComment as allowAll3_2_0_, user0_.avatarLarge as avatarLa4_2_0_, user0_.biFollowersCount as biFollow5_2_0_, user0_.city as city6_2_0_, user0_.createdAt as createdA7_2_0_, user0_.description as descript8_2_0_, user0_.favouritesCount as favourit9_2_0_, user0_.followMe as followM10_2_0_, user0_.followersCount as followe11_2_0_, user0_.friendsCount as friends12_2_0_, user0_.gender as gender13_2_0_, user0_.lang as lang14_2_0_, user0_.location as locatio15_2_0_, user0_.name as name16_2_0_, user0_.onlineStatus as onlineS17_2_0_, user0_.profileImageUrl as profile18_2_0_, user0_.province as provinc19_2_0_, user0_.remark as remark20_2_0_, user0_.screenName as screenN21_2_0_, user0_.statusesCount as statuse22_2_0_, user0_.url as url23_2_0_, user0_.userDomain as userDom24_2_0_, user0_.verified as verifie25_2_0_, user0_.verifiedReason as verifie26_2_0_, user0_.verifiedType as verifie27_2_0_, user0_.weihao as weihao28_2_0_ from user user0_ where user0_.id=?
+3529 DEBUG [2016-05-09 23:31:00]  Static SQL for entity: weibo4j.model.Source
+3529 DEBUG [2016-05-09 23:31:00]   Version select: select url from source where url =?
+3529 DEBUG [2016-05-09 23:31:00]   Snapshot select: select source_.url, source_.name as name2_0_, source_.relationShip as relation3_0_ from source source_ where source_.url=?
+3529 DEBUG [2016-05-09 23:31:00]   Insert 0: insert into source (name, relationShip, url) values (?, ?, ?)
+3529 DEBUG [2016-05-09 23:31:00]   Update 0: update source set name=?, relationShip=? where url=?
+3530 DEBUG [2016-05-09 23:31:00]   Delete 0: delete from source where url=?
+3530 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35b9937d]
+3530 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3530 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3530 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3530 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3530 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3530 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [NONE]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3531 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40ad481c]
+3531 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3531 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3531 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3531 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3531 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3531 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [READ]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3531 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@356122dc]
+3531 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3532 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3532 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3532 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3532 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3532 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [UPGRADE]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3532 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d452472]
+3532 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3532 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3532 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3532 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3533 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3533 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [UPGRADE_NOWAIT]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3533 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65998c51]
+3533 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3533 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3533 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3533 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3534 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3534 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [UPGRADE_SKIPLOCKED]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3534 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@586aaf4a]
+3534 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3534 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3534 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3534 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3535 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3535 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [FORCE]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3535 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ba319a7]
+3535 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3535 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3535 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3535 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3535 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3536 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [PESSIMISTIC_READ]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? lock in share mode
+3536 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d97a0d4]
+3536 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3536 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3536 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3536 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3536 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3536 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [PESSIMISTIC_WRITE]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3537 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@33b60848]
+3537 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3537 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3537 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3537 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3537 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3538 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [PESSIMISTIC_FORCE_INCREMENT]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=? for update
+3538 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f3b68f6]
+3538 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3538 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3538 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3538 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3539 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3539 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [OPTIMISTIC]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3539 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46e05be2]
+3540 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : name
+3540 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : relationShip
+3540 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3540 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3540 DEBUG [2016-05-09 23:31:00]  LoadPlan(entity=weibo4j.model.Source)
+    - Returns
+       - EntityReturnImpl(entity=weibo4j.model.Source, querySpaceUid=<gen:0>, path=weibo4j.model.Source)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=weibo4j.model.Source)
+          - SQL table alias mapping - source0_
+          - alias suffix - 0_
+          - suffixed key columns - {url1_0_0_}
+
+3541 DEBUG [2016-05-09 23:31:00]  Static select for entity weibo4j.model.Source [OPTIMISTIC_FORCE_INCREMENT]: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3541 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_MERGE on entity weibo4j.model.Source: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3541 DEBUG [2016-05-09 23:31:00]  Static select for action ACTION_REFRESH on entity weibo4j.model.Source: select source0_.url as url1_0_0_, source0_.name as name2_0_0_, source0_.relationShip as relation3_0_0_ from source source0_ where source0_.url=?
+3552 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@29055437]
+3552 DEBUG [2016-05-09 23:31:00]  Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1cdbfbeb]
+3555 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : annotations
+3555 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : bmiddlePic
+3555 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : commentsCount
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : createdAt
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : favorited
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : geo
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : id
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToScreenName
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToStatusId
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : inReplyToUserId
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : latitude
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : longitude
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : mlevel
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : originalPic
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : repostsCount
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : retweetedStatus
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : source
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : sourceId
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : text
+3556 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : thumbnailPic
+3557 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : truncated
+3557 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : user
+3557 DEBUG [2016-05-09 23:31:00]  Property path deemed to be circular : user
+3557 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : userId
+3557 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visible
+3557 DEBUG [2016-05-09 23:31:00]  Visiting attribute path : visibleId
+3557 DEBUG [2016-05-09 23:31:00]  Building LoadPlan...
+3562 DEBUG [2016-05-09 23:31:00]  processing queryspace <gen:0>
+3562 DEBUG [2016-05-09 23:31:00]  LoadPlan(collection=weibo4j.model.User.list)
+    - Returns
+       - CollectionReturnImpl(collection=weibo4j.model.User.list, querySpaceUid=<gen:0>, path=[weibo4j.model.User.list])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=weibo4j.model.Status, querySpaceUid=<gen:1>, path=[weibo4j.model.User.list].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=weibo4j.model.User.list)
+          - SQL table alias mapping - list0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id22_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - mid1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=weibo4j.model.Status)
+                - SQL table alias mapping - list0_
+                - alias suffix - 1_
+                - suffixed key columns - {mid1_1_1_}
+
+3563 DEBUG [2016-05-09 23:31:00]  Static select for collection weibo4j.model.User.list: select list0_.user_id as user_id22_2_0_, list0_.mid as mid1_1_0_, list0_.mid as mid1_1_1_, list0_.annotations as annotati2_1_1_, list0_.bmiddlePic as bmiddleP3_1_1_, list0_.commentsCount as comments4_1_1_, list0_.createdAt as createdA5_1_1_, list0_.favorited as favorite6_1_1_, list0_.geo as geo7_1_1_, list0_.id as id8_1_1_, list0_.inReplyToScreenName as inReplyT9_1_1_, list0_.inReplyToStatusId as inReply10_1_1_, list0_.inReplyToUserId as inReply11_1_1_, list0_.latitude as latitud12_1_1_, list0_.longitude as longitu13_1_1_, list0_.mlevel as mlevel14_1_1_, list0_.originalPic as origina15_1_1_, list0_.repostsCount as reposts16_1_1_, list0_.retweetedStatus as retweet17_1_1_, list0_.source_id as source_18_1_1_, list0_.text as text19_1_1_, list0_.thumbnailPic as thumbna20_1_1_, list0_.truncated as truncat21_1_1_, list0_.user_id as user_id22_1_1_, list0_.visible_id as visible23_1_1_ from status list0_ where list0_.user_id=?
+3566 DEBUG [2016-05-09 23:31:00]  Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1b65faeb
+3566 DEBUG [2016-05-09 23:31:00]  Registering SessionFactory: d8a0c2a0-491e-4006-85f4-ceea66ce5c9a (<unnamed>)
+3566 DEBUG [2016-05-09 23:31:00]  Not binding SessionFactory to JNDI, no JNDI name configured
+3566 DEBUG [2016-05-09 23:31:00]  Instantiated session factory
+3573 INFO  [2016-05-09 23:31:00]  HHH000228: Running hbm2ddl schema update
+3573 INFO  [2016-05-09 23:31:00]  HHH000102: Fetching database metadata
+3573 DEBUG [2016-05-09 23:31:00]  trace com.mchange.v2.resourcepool.BasicResourcePool@1b08f35f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@13bdbb15)
+3577 INFO  [2016-05-09 23:31:00]  HHH000396: Updating schema
+3577 DEBUG [2016-05-09 23:31:00]  Processing hbm.xml files
+3577 DEBUG [2016-05-09 23:31:00]  Process annotated classes
+3577 DEBUG [2016-05-09 23:31:00]  Processing fk mappings (*ToOne and JoinedSubclass)
+3577 DEBUG [2016-05-09 23:31:00]  Processing extends queue
+3577 DEBUG [2016-05-09 23:31:00]  Processing extends queue
+3577 DEBUG [2016-05-09 23:31:00]  Processing collection mappings
+3577 DEBUG [2016-05-09 23:31:00]  Processing native query and ResultSetMapping mappings
+3577 DEBUG [2016-05-09 23:31:00]  Processing association property references
+3577 DEBUG [2016-05-09 23:31:00]  Creating tables' unique integer identifiers
+3577 DEBUG [2016-05-09 23:31:00]  Processing foreign key constraints
+3577 DEBUG [2016-05-09 23:31:00]  Resolving reference to class: weibo4j.model.Source
+3578 DEBUG [2016-05-09 23:31:00]  Resolving reference to class: weibo4j.model.User
+3578 DEBUG [2016-05-09 23:31:00]  Resolving reference to class: weibo4j.model.Visible
+3601 INFO  [2016-05-09 23:31:00]  HHH000261: Table found: sjpcmaven.source
+3601 INFO  [2016-05-09 23:31:00]  HHH000037: Columns: [relationship, name, url]

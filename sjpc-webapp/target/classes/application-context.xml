@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	<context:annotation-config />
+	<context:component-scan base-package="com.syk" />
+	<context:component-scan base-package="weibo4j" />
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="user" value="root" />
+		<property name="password" value="root" />
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql:///sjpcmaven" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<property name="packagesToScan" value="weibo4j/model">
+		</property>
+	</bean>
+
+	<!-- 事务管理 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 织入 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="list*" read-only="true" />
+			<tx:method name="query" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+	<!-- 设置切面 -->
+	<aop:config>
+		<aop:pointcut expression="execution(* com.syk.service.*.*(..))"
+			id="txpointcut" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="txpointcut" />
+	</aop:config>
+
+	<bean id="executor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="10" />
+		<property name="maxPoolSize" value="100" />
+		<property name="queueCapacity" value="500" />
+	</bean>
+
+	<!-- 配置定时任务对象 -->
+	<bean id="timeExpressionResetJob" class="com.syk.service.impl.StartServiceImpl"></bean>
+
+	<!-- 配置方法调用任务明细 -->
+	<bean id="timeExpressionResetJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<!-- 配置目标对象 -->
+		<property name="targetObject" ref="timeExpressionResetJob" />
+		<!-- 配置目标方法 -->
+		<property name="targetMethod" value="startSearch" />
+	</bean>
+
+	<!-- 配置触发器 -->
+	<bean id="timeExpressionResetJobTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="timeExpressionResetJobDetail" />
+		<!-- 配置时间规则 -->
+		<property name="cronExpression" value="0 */50 * * * ?"></property>
+		<!-- 配置延时启动 -->
+		<property name="startDelay" value="2000"></property>
+	</bean>
+
+	<!-- 配置调度工厂类 -->
+	<bean id="schedulerFactoryBean"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		lazy-init="default" autowire="default">
+		<property name="taskExecutor" ref="executor" />
+		<property name="triggers">
+			<list>
+				<!-- 添加触发器 -->
+				<ref bean="timeExpressionResetJobTrigger" />
+			</list>
+		</property>
+		<!-- 配置重写存在任务 -->
+		<property name="overwriteExistingJobs" value="true" />
+		<!-- 配置自动执行 -->
+		<property name="autoStartup" value="true" />
+	</bean>
+	<import resource="province.xml" />
+</beans>

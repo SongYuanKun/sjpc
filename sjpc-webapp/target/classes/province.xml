@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+	<bean id="provinceMap" class="java.util.HashMap" scope="prototype">
+		<constructor-arg>
+			<map key-type="java.lang.String" value-type="java.lang.Integer">
+				<entry key="北京" value="0" />
+				<entry key="天津" value="0" />
+				<entry key="上海" value="0" />
+				<entry key="重庆" value="0" />
+				<entry key="河北" value="0" />
+				<entry key="河南" value="0" />
+				<entry key="云南" value="0" />
+				<entry key="辽宁" value="0" />
+				<entry key="黑龙江" value="0" />
+				<entry key="湖南" value="0" />
+				<entry key="安徽" value="0" />
+				<entry key="山东" value="0" />
+				<entry key="新疆" value="0" />
+				<entry key="江苏" value="0" />
+				<entry key="浙江" value="0" />
+				<entry key="江西" value="0" />
+				<entry key="湖北" value="0" />
+				<entry key="广西" value="0" />
+				<entry key="甘肃" value="0" />
+				<entry key="山西" value="0" />
+				<entry key="内蒙古" value="0" />
+				<entry key="陕西" value="0" />
+				<entry key="吉林" value="0" />
+				<entry key="福建" value="0" />
+				<entry key="贵州" value="0" />
+				<entry key="广东" value="0" />
+				<entry key="青海" value="0" />
+				<entry key="西藏" value="0" />
+				<entry key="四川" value="0" />
+				<entry key="宁夏" value="0" />
+				<entry key="海南" value="0" />
+				<entry key="台湾" value="0" />
+				<entry key="香港" value="0" />
+				<entry key="澳门" value="0" />
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>
