@@ -361,7 +361,10 @@ public class Status extends WeiboResponse {
 				}
 			}
 		}
-		longitude = Double.parseDouble(value.toString());
+		try {
+			longitude = Double.parseDouble(value.toString());
+		} catch (NumberFormatException e) {
+		}
 	}
 
 	public Status(JSONObject json) throws WeiboException, JSONException {
