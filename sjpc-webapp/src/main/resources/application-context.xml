@@ -75,7 +75,7 @@
 		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
 		<property name="jobDetail" ref="timeExpressionResetJobDetail" />
 		<!-- 配置时间规则 -->
-		<property name="cronExpression" value="0 */50 * * * ?"></property>
+		<property name="cronExpression" value="* */10 * * * ?"></property>
 		<!-- 配置延时启动 -->
 		<property name="startDelay" value="2000"></property>
 	</bean>

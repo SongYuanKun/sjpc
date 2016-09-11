@@ -228,6 +228,14 @@ public class Status extends WeiboResponse {
 		this.retweetedStatus = retweetedStatus;
 	}
 
+	public String getRetweetedStatusId() {
+		return retweetedStatusId;
+	}
+
+	public void setRetweetedStatusId(String retweetedStatusId) {
+		this.retweetedStatusId = retweetedStatusId;
+	}
+
 	public String getGeo() {
 		return geo;
 	}

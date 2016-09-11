@@ -18,6 +18,7 @@ public class StartServiceImpl implements StartService {
 		int a = (int) (Math.random() * 10);
 		for (int i = 0; i < a * a * 1000 + a * 10; i++) {
 		}
-		timeLineService.getPublicTimeLine();
+		timeLineService.savePublicTimeLine();
+		timeLineService.saveUserStatus();
 	}
 }

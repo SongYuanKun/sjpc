@@ -15,6 +15,8 @@ import weibo4j.model.Status;
 @Service("statusService")
 public class StatusServiceImpl implements StatusService {
 
+	private List<String> userIds;
+
 	@Autowired
 	@Qualifier("statusDao")
 	private StatusDao statusDao;
@@ -42,9 +44,7 @@ public class StatusServiceImpl implements StatusService {
 
 	@Override
 	public Pager<Status> pagerListByUser(String uid, Pager<Status> pager) {
-		return statusDao.query("from Status s left join fetch s.source where s.userId="+uid, pager);
+		return statusDao.query("from Status s left join fetch s.source where s.userId=" + uid, pager);
 	}
-
-	
 
 }
